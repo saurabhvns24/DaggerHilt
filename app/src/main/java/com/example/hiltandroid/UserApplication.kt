@@ -7,9 +7,8 @@ import javax.inject.Inject
 @HiltAndroidApp
 class UserApplication : Application() {
     @Inject
-    lateinit var userRepository: UserRepository
+
     override fun onCreate() {
         super.onCreate()
-        userRepository.saveUser("saurabh", "saurabh@123")
     }
 }
